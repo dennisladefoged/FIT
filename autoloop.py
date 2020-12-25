@@ -7,7 +7,7 @@ groups = ['staff', 'students']
 fitOptions = ['appctrl', 'appctrl', 'appctrl', 'iprep', 'webtraffic', 'webtraffic', 'webtraffic','webtraffic', 'wf', 'wf', 'wf', 'wf', 'malwareurls']
 
 #Create array with username from external file called "usernames.txt"
-usersDB = [line.rstrip('\n') for line in open('/home/FIT-master/usersDB.txt')]
+usersDB = [line.rstrip('\n') for line in open('/home/fit/usersDB.txt')]
 
 #clear screen
 os.system('clear')
@@ -63,7 +63,7 @@ while (loopvar):
 
         j = random.randint(1,5)
         if j == 5:
-                os.system('/home/FIT-master/fit.py vxvault')
+                os.system('/home/fit/fit.py vxvault')
 
 #       print ('j = '+str(j))
         for k in range (random.randint(1,5)):
@@ -71,7 +71,7 @@ while (loopvar):
                 fitSelect = random.choice(fitOptions)
                 print ('Run FIT with the option: '+fitSelect)
         #       Start FIT
-                os.system('/home/FIT-master/fit.py '+fitSelect)
+                os.system('/home/fit/fit.py '+fitSelect)
 
 #       Generate LOGOUT RADIUS ACCOUNTING INFO
         rad_out = "User-Name="+userName+",Calling-Station-ID="+userName+",Framed-IP-Address="+ip+",Class="+groupName+",Acct-Status-Type=Stop"
