@@ -76,7 +76,7 @@ while loopvar<51 :
         print ('Using the IP: '+ip)
         print ('Run FIT with the option: appctrl')
 #       Start FIT with appctlr
-        os.system('cd /fortipoc/fit/ && ./fit.py appctrl')
+        os.system('cd /home/fit/ && ./fit.py appctrl')
         loopvar=loopvar+1
 else :
 #       Assign Original MAC and renew dhcp
